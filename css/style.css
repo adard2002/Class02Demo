@@ -1,0 +1,51 @@
+* {
+  outline: dotted rgb(61, 255, 2);
+}
+
+body {
+  margin: 0 auto;
+  width: 1000px;
+  background-color: rgb(210, 152, 248);
+}
+
+main {
+  background-color: yellow;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+nav {
+  height: 200px;
+  background-color: rgb(124, 253, 247);
+}
+
+ul li {
+  display: inline;
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(0, 150, 150)
+}
+
+ol li {
+  display: inline;
+  color: whitesmoke;
+  background-color: teal;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+.more-styles {
+  background-color: gray;
+  color: wheat;
+}
+
+#another-style {
+  border: 5px solid rgb(216, 62, 62);
+}
