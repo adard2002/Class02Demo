@@ -91,8 +91,9 @@ var correctNumber = 7
       alert('The number you entered is greater than the number I am thinking of. Please try again.');
       console.log(userGuess);
     }
-    else if (userGuess === correctNumber) {
+    else if (userGuess == correctNumber) {
       alert('Correct! The number I was thinking of was 7!');
+      break;
     }
     if ((i === 3) && (userGuess !== correctNumber)){
       alert('Sorry the number I was thinking of was 7.')
