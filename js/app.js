@@ -80,24 +80,23 @@ console.log(psName);
 
 // Question 6. I'm thinking of a number between 1 and 10. Do you know what it is? You have 4 tries. (answer is going to be 7)
 
-
-var userGuess = prompt('I am thinking of a number between 1 and 10. Do you know what it is? You have 4 tries.');
-  for(var i = 0; i < 4; ){
+var correctNumber = 7
+  for(var i = 0; i < 4; i++){
+    var userGuess = prompt('I am thinking of a number between 1 and 10. Do you know what it is? You have 4 tries.');
     //console.log(i);
-    if(userGuess < 7){
-      prompt('The number you entered is less than the number I am thinking of. Please try again.');
-      i++;
+    if(userGuess < correctNumber){
+      alert('The number you entered is less than the number I am thinking of. Please try again.');
       console.log(userGuess);
-    } else if(userGuess > 7){
-      prompt('The number you entered is greater than the number I am thinking of. Please try again.');
-      i++;
+    } else if(userGuess > correctNumber){
+      alert('The number you entered is greater than the number I am thinking of. Please try again.');
       console.log(userGuess);
     }
-    else if (userGuess === 7) {
+    else if (userGuess === correctNumber) {
       alert('Correct! The number I was thinking of was 7!');
-      i=4;
     }
-    alert('Sorry, the number I was thinking of was 7.');
+    if ((i === 3) && (userGuess !== correctNumber)){
+      alert('Sorry the number I was thinking of was 7.')
+    }
   }
 
 // Question 7. Out of these bands which is my most favorite? 
