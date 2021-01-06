@@ -52,19 +52,18 @@ console.log(gameName);
     alert('Oops you entered an incorrect input! Please enter yes, no, y, or n.')
   }
 
-// Question 4. Do I have a gaming PC?
-var pcNameCap = prompt('Do I have a gaming PC?');
-console.log(pcNameCap);
-var pcName = pcNameCap.toLowerCase();
-console.log(pcName);
-  if (pcName === 'yes' || pcName === 'y') {
-    alert('Incorrect, I have a very old laptop that can only run 3 games. And it can\'t run the game Soulworker.')
-  } else if (pcName === 'no' || pcName === 'n') {
-    alert('Correct! I have a very old laptop that can only run 3 games. Can\'t run the game Soulworker anymore.')
+// Question 4. Do I hate spiders and arachnids?
+var spiderNameCap = prompt('Do I hate spiders and arachnids?');
+console.log(spiderNameCap);
+var spiderName = spiderNameCap.toLowerCase();
+console.log(spiderName);
+  if (spiderName === 'yes' || spiderName === 'y') {
+    alert('Incorrect! I love spiders, tarantulas, scorpions, etc! I have 2 tarantulas and 1 scorpion my uncle gave me on Christmas!')
+  } else if (spiderName === 'no' || 'n') {
+    alert('Correct! I love spiders, tarantulas, scorpions, etc! I have 2 tarantulas and 1 scorpion which my uncle gave me on Christmas!')
   } else {
     alert('Oops you entered an incorrect input! Please enter yes, no, y, or n.')
   }
-
 
 // Question 5. Was my first console the Playstation 2?
 var psNameCap = prompt('Was my first gaming console the Playstation 2?');
@@ -79,9 +78,31 @@ console.log(psName);
     alert('Oops you entered an incorrect input! Please enter yes, no, y, or n.')
   }
 
+// Question 6. I'm thinking of a number between 1 and 10. Do you know what it is? You have 4 tries. (answer is going to be 7)
 
 
+var userGuess = prompt('I am thinking of a number between 1 and 10. Do you know what it is? You have 4 tries.');
+  for(var i = 0; i < 4; ){
+    //console.log(i);
+    if(userGuess < 7){
+      prompt('The number you entered is less than the number I am thinking of. Please try again.');
+      i++;
+      console.log(userGuess);
+    } else if(userGuess > 7){
+      prompt('The number you entered is greater than the number I am thinking of. Please try again.');
+      i++;
+      console.log(userGuess);
+    }
+    else if (userGuess === 7) {
+      alert('Correct! The number I was thinking of was 7!');
+      i=4;
+    }
+    alert('Sorry, the number I was thinking of was 7.');
+  }
 
-
-
-
+// Question 7. Out of these bands which is my most favorite? 
+var bandGuess = prompt('Out of these bands which are my most favorite?');
+    console.log(bandGuess)
+     var bandGuess = ['Hollywood Undead', 'Motionless in White', 'New Medicine', 'Theory of a Deadman', 'Marilyn Manson', 'Get Scared', 'Linkin Park', 'Korn', 'Falling in Reverse', 'My Darkest Days'];
+    var a = bandGuess.indexOf('Hollywood Undead');
+  
