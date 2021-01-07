@@ -1,2 +1,5 @@
-# Class02Demo
-Intro to page scaffolding. Git Page will render the index.html.
+#Adara's About Me Page
+
+--Pair programming exercise--
+      navigator: Adara
+      driver: Lillian
