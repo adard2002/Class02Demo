@@ -132,7 +132,7 @@ var correctNumber = 7
       //console.log(i);
       if(bandGuess !== correctBand){
         console.log('This is the point total ', userPoints);
-        alert('The band/person you entered is not my top favorite. Try again');
+        alert('The band/person you entered is not my top favorite. My favorite band is Hollywood Undead!');
         console.log(userGuess);
       } else if (userGuess === correctNumber) {
         userPoints = userPoints + 1;
